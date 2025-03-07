@@ -10,7 +10,8 @@ let x = 1
 
 (source_file
   (text)
-  (code)
+  (code
+    (code_contents))
   (text))
 
 ========
@@ -26,7 +27,8 @@ pass
 (source_file
   (text)
   (code
-    (language_name))
+    (language_name)
+    (code_contents))
   (text))
 
 =========
@@ -44,7 +46,8 @@ pass
 (source_file
   (text)
   (code
-    (language_name))
+    (language_name)
+    (code_contents))
   (text))
 
 ================
@@ -66,7 +69,8 @@ Code block with {[inner code block syntax]}
   (code)
   (text)
   (code
-    (language_name))
+    (language_name)
+    (code_contents))
   (text))
 
 ===============
@@ -82,5 +86,6 @@ bracket in code
 (source_file
   (text)
   (code
-    (language_name))
+    (language_name)
+    (code_contents))
   (text))
