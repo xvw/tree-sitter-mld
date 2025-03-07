@@ -44,11 +44,12 @@ module.exports = grammar({
           "{",
           optional(seq("@", $.language_name)),
           "[",
-          repeat(choice(/[^\]]/, /][^}]/)),
+          $.code_contents,
           "]}",
         ),
         seq("{foo@text[", $._foo_string, "]foo}"),
       ),
+    code_contents: ($) => repeat1(choice(/[^\]]/, /][^}]/)),
     // hardcode for "foo" delimiter - see tree-sitter-ocaml for how to implement
     _foo_string: ($) => repeat1(choice(/[^]]+/, /\][^f]/)),
     language_name: ($) => /\w+/,
