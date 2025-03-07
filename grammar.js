@@ -42,7 +42,7 @@ module.exports = grammar({
       choice(
         seq(
           "{",
-          optional(seq("@", $.language_name)),
+          optional(field("language", seq("@", $.language_name))),
           "[",
           $.code_contents,
           "]}",
