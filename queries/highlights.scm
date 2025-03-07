@@ -3,3 +3,5 @@
 ] @text.uri
 
 (header) @text.title
+
+(inline_code) @markup.raw
