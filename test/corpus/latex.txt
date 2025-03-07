@@ -1,0 +1,27 @@
+======
+inline
+======
+
+{m \sqrt 2}
+
+---
+
+(source_file
+  (text)
+  (math_inline
+    (text))
+  (text))
+
+=======
+display
+=======
+
+{math \sqrt 2}
+
+---
+
+(source_file
+  (text)
+  (math_display
+    (text))
+  (text))

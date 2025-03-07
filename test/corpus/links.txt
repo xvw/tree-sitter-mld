@@ -1,0 +1,43 @@
+=======
+section
+=======
+
+{{!docname.section}Name}
+
+---
+
+(source_file
+  (text)
+  (link
+    (link_target)
+    (text))
+  (text))
+
+========
+bare URL
+========
+
+{:https://www.example.com}
+
+---
+
+(source_file
+  (text)
+  (link
+    (link_target))
+  (text))
+
+============
+library xref
+============
+
+{{!/fmt/Fmt.pf}this function from another library}
+
+---
+
+(source_file
+  (text)
+  (link
+    (link_target)
+    (text))
+  (text))

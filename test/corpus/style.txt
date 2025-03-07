@@ -1,0 +1,83 @@
+====
+bold
+====
+
+{b text}
+
+---
+
+(source_file
+  (text)
+  (bold
+    (text))
+  (text))
+
+======
+italic
+======
+
+{i text}
+
+---
+
+(source_file
+  (text)
+  (italic
+    (text))
+  (text))
+
+==========
+emphasized
+==========
+
+{e text}
+
+---
+
+(source_file
+  (text)
+  (emphasized
+    (text))
+  (text))
+
+=========
+subscript
+=========
+
+H{_ 2}O
+
+---
+
+(source_file
+  (text)
+  (subscript
+    (text))
+  (text))
+
+===========
+superscript
+===========
+
+1{^ st}
+
+---
+
+(source_file
+  (text)
+  (superscript
+    (text))
+  (text))
+
+========
+verbatim
+========
+
+{v text}
+
+---
+
+(source_file
+  (text)
+  (verbatim
+    (text))
+  (text))

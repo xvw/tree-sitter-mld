@@ -1,0 +1,62 @@
+=====
+ul li
+=====
+
+{ul
+ {li A}
+ {li B}}
+
+---
+
+(source_file
+  (text)
+  (ul
+    (text)
+    (li
+      (text))
+    (text)
+    (li
+      (text)))
+  (text))
+
+=======
+ul dash
+=======
+
+{ul
+ {- A}
+ {- B}}
+
+---
+
+(source_file
+  (text)
+  (ul
+    (text)
+    (li
+      (text))
+    (text)
+    (li
+      (text)))
+  (text))
+
+=====
+ol li
+=====
+
+{ol
+ {li A}
+ {li B}}
+
+---
+
+(source_file
+  (text)
+  (ol
+    (text)
+    (li
+      (text))
+    (text)
+    (li
+      (text)))
+  (text))

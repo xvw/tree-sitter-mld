@@ -1,0 +1,86 @@
+====
+code
+====
+
+{[
+let x = 1
+]}
+
+---
+
+(source_file
+  (text)
+  (code)
+  (text))
+
+========
+language
+========
+
+{@python[
+pass
+]}
+
+---
+
+(source_file
+  (text)
+  (code
+    (language_name))
+  (text))
+
+=========
+multiline
+=========
+
+{@python[
+pass
+
+pass
+]}
+
+---
+
+(source_file
+  (text)
+  (code
+    (language_name))
+  (text))
+
+================
+custom delimiter
+================
+
+{foo@text[
+Code block with {[inner code block syntax]}
+]foo}
+
+{@python[
+1+1
+]}
+
+---
+
+(source_file
+  (text)
+  (code)
+  (text)
+  (code
+    (language_name))
+  (text))
+
+===============
+bracket in code
+===============
+
+{@python[
+[i+1 for i in xrange(2)]
+]}
+
+---
+
+(source_file
+  (text)
+  (code
+    (language_name))
+  (text))

@@ -1,0 +1,76 @@
+===
+th
+===
+
+{th Header}
+
+---
+
+(source_file
+  (text)
+  (th
+    (text))
+  (text))
+
+=====
+table
+=====
+
+{table
+  {tr
+    {th Header 1}
+    {th Header 2}}
+  {tr
+    {td Cell 1}
+    {td Cell 2}}
+  {tr
+    {td Cell 3}
+    {td Cell 4}}}
+
+---
+
+(source_file
+  (text)
+  (table
+    (text)
+    (tr
+      (text)
+      (th
+        (text))
+      (text)
+      (th
+        (text)))
+    (text)
+    (tr
+      (text)
+      (td
+        (text))
+      (text)
+      (td
+        (text)))
+    (text)
+    (tr
+      (text)
+      (td
+        (text))
+      (text)
+      (td
+        (text))))
+  (text))
+
+=====
+light
+=====
+
+{t | Header 1 | Header 2 |
+   |----------|----------|
+   | Cell 1   | Cell 2   |
+   | Cell 3   | Cell 4   |}
+
+---
+
+(source_file
+  (text)
+  (table_light
+    (text))
+  (text))

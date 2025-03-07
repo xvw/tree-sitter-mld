@@ -1,0 +1,16 @@
+.direnv/
+src/
+package.json
+.editorconfig
+Cargo.toml
+Makefile
+Package.swift
+binding.gyp
+bindings/
+pyproject.toml
+result
+setup.py
+.gitattributes
+go.mod
+CMakeLists.txt
+tree-sitter.json
