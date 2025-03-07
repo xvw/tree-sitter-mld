@@ -81,3 +81,16 @@ verbatim
   (verbatim
     (text))
   (text))
+
+===========
+inline code
+===========
+
+This is [inline code].
+
+---
+
+(source_file
+  (text)
+  (inline_code)
+  (text))
