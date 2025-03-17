@@ -30,6 +30,7 @@ module.exports = grammar({
         $.math_inline,
         $.math_display,
         $.inline_code,
+        $.comment,
       ),
     _doc: ($) => repeat1($._item),
     header: ($) => seq("{", choice("0", "1", "2", "3", "4", "5"), /[^}]+/, "}"),
@@ -69,5 +70,7 @@ module.exports = grammar({
     math_display: ($) => seq("{math ", $._doc, "}"),
     table_light: ($) => seq("{t", $._doc, "}"),
     inline_code: ($) => seq("[", /[^]]+/, "]"),
+    // not really an odoc comment but used in the highlight test suite
+    comment: ($) => seq("{%%", /[^%]+/, "%}"),
   },
 });
